@@ -1,9 +1,13 @@
-This program is free to use but not modify to anyone who currently is a member of the Enlightened team on the video game ingress created by Niantic Labs.
+This program is free to use and modify to anyone who currently is a member of the Enlightened team on the video game ingress created by Niantic Labs.  However any derivides of this software must maintain this license.
 
-Faction changing from the resistance to the enlightened gains someone the right to this software.
+The orginial author, Dean Nelson retains full rights to this software, including but not limited to, retaining the right to change this license at any time without warning, shareing and distributing the code with anyone, desiding who can help edit the code irrespective of the license, and all other rights. 
 
-To those who are do not play ingress should install the game, join the enlightened team, and get ready for a fun game that gets them active.  
+Any use of this software must be to benefit the ingress enlightned teams activities.  Examples include but are not limited to, key transfer for a megafield, key tranfer for enlightened remore recharge rooms for an anomaly, key transfer for enlightened field art, and so forth.
 
-Those who currently play on the resistance are banned from using this software or even possessing a copy unused.  
+Any resistance agent who faction changes from the resistance to the enlightened gains said person the right to use this software as stated above.
 
-Faction Changing from the enlightened to the resistance voids any right to use or retain a copy of this software and those faction changeing must immediatly delete any copies of this software.
+Those who are do not play ingress are strongly encoraged to install the game, join the enlightened team, and get ready for a fun game that gets them active and making a lot of new friends.  
+
+Those who currently play on the resistance are banned from using this software or even possessing a copy.  
+
+Faction Changing from the enlightened to the resistance voids any right to use or retain a copy of this software and those faction changeing from enlightened to resistance must immediatly delete any copies of this software, and never use it again.
