@@ -16,8 +16,8 @@ Find destination of destinations of A that is also an origin of D
 
 Four leg logic
 (B)Find all destinations of A
-(C)Find all destinations of destinations of A(C)
-(D)Find all destinations of all destinations of all destinations of A(D)
+(C)Find all destinations of destinations of A
+(C)Find all origins of origins of E
 (D)Find all origins of E
-Find destination of all destinations of all destinations of A that equals an origin of E
+Find destination of all destinations of  A that equals an or of all origin of E
 
