@@ -1,21 +1,23 @@
 Two leg logic
-Find all destinations of A
-Find all origins of C
+(B)Find all destinations of A
+(B)Find all origins of C
 Find location that is on destination of A and origin of C
 
 Three leg logic
 Method 1:
-Find all destinations of A
-Find all origins of D
+(B)Find all destinations of A
+(C)Find all origins of D
 Find leg with destination of A and origin of D
 Method 2:
-Find all destinations of A
-Find all destinations of destinations of A
-Find destination of destinations of of destinations of A that equals D
+(B)Find all destinations of A
+(C)Find all destinations of destinations of A
+(C)Find all origins of D
+Find destination of destinations of A that is also an origin of D
 
 Four leg logic
-Find all destinations of A
-Find all destinations of destinations of A
-Find all destinations of all destinations of all destinations of A
-Find destination of all destinations of all destinations of all destinations of A that equals E
+(B)Find all destinations of A
+(C)Find all destinations of destinations of A(C)
+(D)Find all destinations of all destinations of all destinations of A(D)
+(D)Find all origins of E
+Find destination of all destinations of all destinations of A that equals an origin of E
 
