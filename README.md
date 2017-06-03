@@ -1,3 +1,3 @@
-This program is for the benefit of the ingress enlightened team.  It is designed to help cordinate and leverage the enlightens awsome and willing team members more to more effectivly cordinate key transfers and help open routes that a human might not be able to see. to enable more remote recharge room, giving more agents a chance at an anomaly badge, and increaseing the enlightened xm that flows to the anomaly sites.
+This program is for the benefit of the ingress enlightened team. It is designed to help coordinate and leverage the enlighten’s awesome and willing team members more effectively helping to coordinate key transfers and expose open routes that a human might not be able to see.  This will enable more remote recharge room, giving more agents a chance at an anomaly badge, in addition to increasing the enlightened xm that flows into the anomaly sites.
 
-It can also be used to cordinate key transfers for megafields and other operations which benefit the enlightened team.
+It can also be used to coordinate key transfers for mega fields and any other operations which benefits the enlightened team against the resistance.
