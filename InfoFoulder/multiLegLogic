@@ -2,17 +2,33 @@ Two leg logic
 (B)Find all destinations of A
 (B)Find all origins of C
 Find location that is on destination of A and origin of C
+Find all trip IDs of B to C
+Find all trip IDs of A to B before last B to C
+Repeat above ignoring last path found #This would be an advanced thing to code to be implimented post production.
+Display to user
 
 Three leg logic
 Method 1:
 (B)Find all destinations of A
 (C)Find all origins of D
 Find leg with destination of A and origin of D
+Find all trip IDs of C to D
+Find all trip IDs of B to C before last C to D
+Find all trip IDs of A to B before last B to C
+Repeat above ignoring last path found #This would be an advanced thing to code to be implimented post production.
+Display to user
+
 Method 2:
 (B)Find all destinations of A
 (C)Find all destinations of destinations of A
 (C)Find all origins of D
 Find destination of destinations of A that is also an origin of D
+Find all trip IDs of C to D
+Find all trip IDs of B to C before last C to D
+Find all trip IDs of A to B before last B to C
+Repeat above ignoring last path found #This would be an advanced thing to code to be implimented post production.
+Display to user
+
 
 Four leg logic
 (B)Find all destinations of A
@@ -20,4 +36,9 @@ Four leg logic
 (C)Find all origins of origins of E
 (D)Find all origins of E
 Find destination of all destinations of  A that equals an or of all origin of E
-
+Find all trip IDs of D to E
+FInd all trip IDs of C to D before last D to E
+Find all trip IDs of B to C before last C to D
+Find all trip IDs of A to B before last B to C
+Repeat above ignoring last path found #This would be an advanced thing to code to be implimented post production.
+Display to user
