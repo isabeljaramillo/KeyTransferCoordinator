@@ -21,6 +21,10 @@ class TripsController < ApplicationController
   def edit
   end
 
+  def results
+    @result = trips.IGN..where(["origin = ? and destination = ?", "@origin", "@destination"])
+  end
+
   # POST /trips
   # POST /trips.json
   def create
