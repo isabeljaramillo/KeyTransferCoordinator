@@ -13,13 +13,13 @@
   </thead>
 
   <tbody>
-    <% form_with(model: @trips, local:true) do |form| %>
-      .field
+    <% form_with(model: @trip, local:true) do |form| %>
+      <div class="field">
         <%= form.label :origin %>
         <%= form.text_field :origin, id: :origin %>
         <%= form.label :destination %>
         <%= form.text_field :destination, id: :destination %>
-      .actions
+      <div class="actions">
         <%= form.submit %>
     <% end %>
 
