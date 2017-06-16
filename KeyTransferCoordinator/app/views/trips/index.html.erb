@@ -28,7 +28,7 @@
         <td><%= trip.origin %></td>
         <td><%= trip.destination %></td>
         <td><%= trip.IGN %></td>
-        <td><%= link_to 'result', result %></td>
+        <td><%= link_to 'result', result_path %></td>
         <td><%= link_to 'Show', trip %></td>
         <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
         <td><%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -40,3 +40,4 @@
 <br>
 
 <%= link_to 'New Trip', new_trip_path %>
+<%= link_to 'result', result_path %>
