@@ -22,8 +22,7 @@ class TripsController < ApplicationController
   end
 
   def search
-    @Test_Result = Trip.where("origin = ? and destination = ?", "Chicago", "Denver").select("IGN")
-    @Test2 = Trip.where("origin = ? and destination = ?", "Chicago", "Denver")
+    @test2 = Trip.where(["origin = ? and destination = ?", "Chicago", "Denver"])
     #respond_to do |format|
      # @result = trip.IGN.where(["origin = ? and destination = ?", "@origin", "@destination"])
     #end
