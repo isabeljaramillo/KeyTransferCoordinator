@@ -4,9 +4,7 @@
 
 <%= link_to 'Back', trips_path %>
 
-<%= @Test_Result %>
-
 <br>
-<%= @test2.each do |result| %>
-  <%= @test2.IGN %>
+<% @results.each do |result| %>
+  <%= result.IGN %>
 <% end %>

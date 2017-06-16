@@ -21,15 +21,11 @@ class TripsController < ApplicationController
   def edit
   end
 
+  # POST /search
   def search
-    @test2 = Trip.where(["origin = ? and destination = ?", "Chicago", "Denver"])
-    #respond_to do |format|
-     # @result = trip.IGN.where(["origin = ? and destination = ?", "@origin", "@destination"])
-    #end
-  end
-
-  def result
-    @result = trips.IGN..where(["origin = ? and destination = ?", "@origin", "@destination"])
+    search_origin = params[:origin]
+    search_destination = params[:destination] 
+    @results = Trip.where(["origin = ? and destination = ?", search_origin, search_destination])
   end
 
   # POST /trips

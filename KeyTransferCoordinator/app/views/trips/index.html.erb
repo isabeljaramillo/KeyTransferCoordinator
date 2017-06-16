@@ -18,16 +18,6 @@
   </thead>
 
   <tbody>
-    <% form_with(model: @trip, local:true) do |form| %>
-      <div class="field">
-        <%= form.label :origin %>
-        <%= form.text_field :origin, id: :origin %>
-        <%= form.label :destination %>
-        <%= form.text_field :destination, id: :destination %>
-      <div class="actions">
-        <%= form.submit %>
-    <% end %>
-
     <% @trips.each do |trip| %>
       <tr>
         <td><%= trip.origin %></td>
