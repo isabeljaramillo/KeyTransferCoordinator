@@ -21,7 +21,7 @@ class TripsController < ApplicationController
   def edit
   end
 
-  def results
+  def result
     #@result = trips.IGN..where(["origin = ? and destination = ?", "@origin", "@destination"])
   end
 
