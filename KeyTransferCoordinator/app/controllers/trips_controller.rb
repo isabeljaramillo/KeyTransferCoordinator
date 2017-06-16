@@ -22,7 +22,7 @@ class TripsController < ApplicationController
   end
 
   def results
-    @result = trips.IGN..where(["origin = ? and destination = ?", "@origin", "@destination"])
+    #@result = trips.IGN..where(["origin = ? and destination = ?", "@origin", "@destination"])
   end
 
   # POST /trips
