@@ -3,3 +3,5 @@
 <%= render 'search_form', trip: @trip %>
 
 <%= link_to 'Back', trips_path %>
+
+<%= Trip.where("origin = ? and destination = ?", "Chiacgo", "Denver").select("IGN") %>
