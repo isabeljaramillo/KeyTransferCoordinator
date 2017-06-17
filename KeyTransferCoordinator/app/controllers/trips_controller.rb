@@ -25,7 +25,7 @@ class TripsController < ApplicationController
   def search
     @search_origin = params[:origin]
     @search_destination = params[:destination] 
-    @OneLeg = Trip.OneLeg
+    Trip.find_route(params[:origin], params[:destination])
   end
 
   # POST /trips
