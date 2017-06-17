@@ -1,9 +1,9 @@
 class Trip < ApplicationRecord
   validates :origin, :destination, :IGN, presence: true
 
-  def self.find_route(sorigin, sdestination)
-    OneLeg(sorigin, sdestination)
-    TwoLeg(sorigin, sdestination)
+  def self.find_routes(sorigin, sdestination)
+    one_leg(sorigin, sdestination)
+    two_leg(sorigin, sdestination)
   end
 
   def one_leg(sorigin, sdestination)
