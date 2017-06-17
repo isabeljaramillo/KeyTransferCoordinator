@@ -79,6 +79,10 @@ class TripsController < ApplicationController
       params.require(:trip).permit(:origin, :destination, :IGN)
     end
 
+    def OneLeg
+      @OneLeg = Trip.where(["origin = ? and destination = ?", @search_origin, @search_destination])
+    end
+
     def TwoLeg
       B1 = []
       B1 =Trip.where(["origin = ?", @search_origin])
@@ -90,8 +94,8 @@ class TripsController < ApplicationController
       while x < B1.count
         while y < B2.count
           if B1[x].destination == B2[y].origin
-            @Leg1.push(B1[x])
-            @Leg2.push(B2[y])
+            @TwoLeg1.push(B1[x])
+            @TwoLeg2.push(B2[y])
           end
         y += 1
         end
