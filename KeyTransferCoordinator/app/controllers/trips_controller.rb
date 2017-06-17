@@ -23,9 +23,7 @@ class TripsController < ApplicationController
 
   # POST /search
   def search
-    @search_origin = params[:origin]
-    @search_destination = params[:destination] 
-    Trip.find_routes([@search_origin, @search_destination])
+    Trip.find_routes(params[:origin], params[:destination])
   end
 
   # POST /trips
