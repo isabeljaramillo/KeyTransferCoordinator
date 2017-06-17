@@ -19,11 +19,11 @@ class Trip < ApplicationRecord
     @two_leg2 = []
     x = 0
     y = 0
-    while x < B1.count
-      while y < B2.count
-        if B1[x].destination == B2[y].origin
-          @two_leg1.push(B1[x])
-          @two_leg2.push(B2[y])
+    while x < @b1.count
+      while y < @b2.count
+        if @b1[x].destination == @b2[y].origin
+          @two_leg1.push(@b1[x])
+          @two_leg2.push(@b2[y])
         end
       y += 1
       end
