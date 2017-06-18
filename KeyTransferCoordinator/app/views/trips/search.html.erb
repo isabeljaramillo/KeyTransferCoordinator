@@ -1,6 +1,6 @@
 <h1>Searching Trips</h1>
 
-<%= form_with(model: Trip, local: true) do |form| %>
+<%= form_with(model: @Trip, local: true) do |form| %>
 
   <div class="field">
     <%= form.label :origin %>
@@ -14,23 +14,10 @@
 
   <div class="actions">
     <%= form.submit %>
+    <% redirect_to results_path %>
   </div>
 <% end %>
 
 <%= link_to 'Database List', trips_path %>
 
-<br>
-<br>
-
-<h2>One Leg Routes:</h2>
-<h3>
-<% @one_leg.each do |leg| %>
-  <%= leg.IGN %>
-<% end %>
-</h3>
-<br><br>
-
-<h2>Two Leg Routes:</h2>
-<h3>Leg One:</h3>
-<h3>Leg Two:</h3>
 
