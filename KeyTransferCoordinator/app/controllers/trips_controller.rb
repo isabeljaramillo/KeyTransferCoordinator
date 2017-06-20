@@ -26,6 +26,7 @@ class TripsController < ApplicationController
     sorigin = params[:origin]
     sdestination = params[:destination]
     Trip.find_routes(sorigin, sdestination)
+    @leg_one
   end
 
   # POST /trips
