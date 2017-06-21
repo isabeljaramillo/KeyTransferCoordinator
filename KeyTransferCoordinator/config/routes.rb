@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :routes
   get 'trips/search', to: 'trips#search', as: 'search'
   get 'trips/results', to: 'trips#results', as: 'results'
   post 'trips/search', to: 'trips#search'
