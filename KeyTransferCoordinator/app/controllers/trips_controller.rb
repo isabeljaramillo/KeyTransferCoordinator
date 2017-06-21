@@ -26,6 +26,10 @@ class TripsController < ApplicationController
     sorigin = params[:origin]
     sdestination = params[:destination]
     Trip.find_routes(sorigin, sdestination)
+
+    respond_to do |format|
+     format.html {redirect_to results_path}
+    end
   end
 
   # POST /trips
