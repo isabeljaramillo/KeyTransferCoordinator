@@ -25,8 +25,9 @@ class TripsController < ApplicationController
   def search
     sorigin = params[:origin]
     sdestination = params[:destination]
-    Trip.find_routes(sorigin, sdestination)
-
+    @one_leg = Trip.one_leg(sorigin, sdestination)
+    @two_leg1 = Trip.two_leg1(sorigin, sdestination)
+    @two_leg2 = Trip.two_leg2(sorigin, sdestination)
   end
 
   # POST /trips

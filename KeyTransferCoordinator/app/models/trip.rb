@@ -7,10 +7,10 @@ class Trip < ApplicationRecord
   end
 
   def self.one_leg(sorigin, sdestination)
-   @one_leg = (Trip.where(["origin = ? and destination = ?", sorigin, sdestination]))
+   (Trip.where(["origin = ? and destination = ?", sorigin, sdestination]))
   end
 
-  def self.two_leg(sorigin, sdestination)
+  def self.two_leg1(sorigin, sdestination)
     b1 = []
     b2 = []
     b1 = Trip.where(["origin = ?", sorigin])
@@ -30,6 +30,29 @@ class Trip < ApplicationRecord
     y = 0
     x += 1
     end
+  @two_leg1
   end
 
+  def self.two_leg2(sorigin, sdestination)
+    b1 = []
+    b2 = []
+    b1 = Trip.where(["origin = ?", sorigin])
+    b2 = Trip.where(["destination = ?", sdestination])
+    @two_leg1 = []
+    @two_leg2 = []
+    x = 0
+    y = 0
+    while x < b1.count
+      while y < b2.count
+        if b1[x].destination == b2[y].origin
+          @two_leg1 = (b1[x])
+          @two_leg2 = (b2[y])
+        end
+      y += 1
+      end
+    y = 0
+    x += 1
+    end
+  @two_leg2
+  end
 end
