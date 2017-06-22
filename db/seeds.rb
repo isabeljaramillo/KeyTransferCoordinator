@@ -11,7 +11,7 @@ Leg.create(origin: 'Los Angeles', destination: 'Mexico City', username: 'Disaste
 Leg.create(origin: 'Chicago', destination: 'Ann Arbor', username: 'FireEmblemRoy',)
 Leg.create(origin: 'Denver', destination: 'Monterrey', username: 'Featherdog',)
 Leg.create(origin: 'Ann Arbor', destination: 'Kansas City', username: 'DisasterTrident',)
-Leg.create(origin: '', destination: '', username: 'DisasterCthulhu',)
+Leg.create(origin: 'Chicago', destination: 'Monterrey', username: 'DisasterCthulhu',)
 Leg.create(origin: 'Mexico City', destination: 'Tegucigalpa', username: 'Wal10c',)
 Leg.create(origin: 'New York', destination: 'Chicago', username: 'Aonthe',)
 Leg.create(origin: 'Chicago', destination: 'Dallas', username: 'DisasterScotch',)
