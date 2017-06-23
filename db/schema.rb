@@ -10,12 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170622174424) do
+ActiveRecord::Schema.define(version: 20170623192614) do
 
   create_table "legs", force: :cascade do |t|
     t.string "origin"
     t.string "destination"
     t.string "username"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "transit_mode"
+  end
+
+  create_table "legs_trips", id: false, force: :cascade do |t|
+    t.integer "leg_id", null: false
+    t.integer "trip_id", null: false
+    t.index ["leg_id", "trip_id"], name: "index_legs_trips_on_leg_id_and_trip_id"
+    t.index ["trip_id", "leg_id"], name: "index_legs_trips_on_trip_id_and_leg_id"
+  end
+
+  create_table "legs_users", id: false, force: :cascade do |t|
+    t.integer "leg_id", null: false
+    t.integer "user_id", null: false
+    t.index ["leg_id", "user_id"], name: "index_legs_users_on_leg_id_and_user_id"
+    t.index ["user_id", "leg_id"], name: "index_legs_users_on_user_id_and_leg_id"
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "origin"
+    t.string "destination"
+    t.string "username"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trips_users", id: false, force: :cascade do |t|
+    t.integer "trip_id", null: false
+    t.integer "user_id", null: false
+    t.index ["trip_id", "user_id"], name: "index_trips_users_on_trip_id_and_user_id"
+    t.index ["user_id", "trip_id"], name: "index_trips_users_on_user_id_and_trip_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "community"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
