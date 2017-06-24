@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170623192614) do
-=======
 ActiveRecord::Schema.define(version: 20170623202701) do
->>>>>>> fdc96893189262fba43b89f23cf716365c61744d
-
   create_table "legs", force: :cascade do |t|
     t.string "origin"
     t.string "destination"
