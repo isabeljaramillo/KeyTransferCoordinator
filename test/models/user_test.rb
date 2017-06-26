@@ -17,4 +17,3 @@ class UserTest < ActiveSupport::TestCase
     assert @user.errors[:vouched].any?
   end
 end
-end 
