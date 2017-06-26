@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170626150709) do
+ActiveRecord::Schema.define(version: 20170626164547) do
 
   create_table "Trips", force: :cascade do |t|
     t.string "origin"
@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(version: 20170626150709) do
     t.string "community"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "voucher"
+    t.string "vouched"
   end
 
 end
