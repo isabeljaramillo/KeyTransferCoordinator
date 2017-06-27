@@ -12,15 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170627190606) do
 
-  create_table "Trips", force: :cascade do |t|
-    t.string "origin"
-    t.string "destination"
-    t.string "triptitle"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "leg_count"
-  end
-
   create_table "legs", force: :cascade do |t|
     t.string "origin"
     t.string "destination"
@@ -42,6 +33,15 @@ ActiveRecord::Schema.define(version: 20170627190606) do
     t.integer "user_id", null: false
     t.index ["leg_id", "user_id"], name: "index_legs_users_on_leg_id_and_user_id"
     t.index ["user_id", "leg_id"], name: "index_legs_users_on_user_id_and_leg_id"
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "origin"
+    t.string "destination"
+    t.string "triptitle"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "leg_count"
   end
 
   create_table "trips_users", id: false, force: :cascade do |t|
