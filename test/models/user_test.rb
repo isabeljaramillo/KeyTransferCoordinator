@@ -9,7 +9,8 @@ class UserTest < ActiveSupport::TestCase
                 vouched:        "3CPO")
   end
 
-  test "should not save user without username, email, community, voucher,or vouched" do
+  test "should not save user without username, email, community
+        voucher, or vouched" do
     @user = User.new
     assert @user.invalid?
     assert @user.errors[:username].any?
