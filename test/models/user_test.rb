@@ -2,11 +2,11 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def new_user
-    Product.new(username:       "Rails2Ruin",
-                email:          "rails2ruin@gmail.com",
-                community:      "Chicago Area",
-                voucher:        "BobbyJoe3",
-                vouched:        "3CPO")
+    User.new(username:       "Rails2Ruin",
+             email:          "rails2ruin@gmail.com",
+             community:      "Chicago Area",
+             voucher:        "BobbyJoe3",
+             vouched:        "3CPO")
   end
 
   test "should not save user without username, email, community

@@ -8,7 +8,8 @@ class LegTest < ActiveSupport::TestCase
             transit_mode: "airplane")
   end
 
-  test "should not save leg without destination, origin, or username" do
+  test "should not save leg without destination, origin, username or
+        transit_mode" do
     @leg = Leg.new
     assert @leg.invalid?
     assert @leg.errors[:origin].any?

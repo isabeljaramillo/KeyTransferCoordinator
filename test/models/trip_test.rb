@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class TripTest < ActiveSupport::TestCase
-  def new_test
+  def new_trip
     Trip.new(origin: "Chicago",
             destination: "Hong Kong",
             triptitle: "My Trip")
