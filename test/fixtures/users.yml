@@ -4,8 +4,12 @@ one:
   username: MyString
   email: MyString
   community: MyString
+  voucher: Mystring
+  vouched: Mystring
 
 two:
   username: MyString
   email: MyString
   community: MyString
+  voucher: Mystring
+  vouched: Mystring

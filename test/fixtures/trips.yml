@@ -3,9 +3,9 @@
 one:
   origin: MyString
   destination: MyString
-  username: MyString
+  triptitle: MyString
 
 two:
   origin: MyString
   destination: MyString
-  username: MyString
+  triptitle: MyString
