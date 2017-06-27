@@ -19,4 +19,3 @@ Leg.create(origin: 'Ann Arbor', destination: 'Chicago', username: 'StiffH20',)
 Leg.create(origin: 'Chicago', destination: 'Denver', username: 'HawksParent',)
 Leg.create(origin: 'Kansas City', destination: 'Los Angeles', username: 'Dayosteph',)
 Leg.create(origin: 'Boston', destination: 'Chicago', username: 'DisasterPyrite')
-

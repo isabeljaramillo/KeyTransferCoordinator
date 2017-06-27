@@ -4,8 +4,11 @@ one:
   origin: MyString
   destination: MyString
   username: MyString
+  transit_mode: Mystring
+
 
 two:
   origin: MyString
   destination: MyString
   username: MyString
+  transit_mode: Mystring
