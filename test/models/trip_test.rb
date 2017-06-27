@@ -7,11 +7,11 @@ require 'test_helper'
             triptitle: "My Trip")
     end
 
-    test "should not save author without origin, desitination, tripname,voucher or vouch" do
+    test "should not save trip without origin, desitination, or triptitle" do
       @trip = Trip.new
       assert @trip.invalid?
       assert @trip.errors[:origin].any?
       assert @trip.errors[:destination].any?
-      assert @trip.errors[:tripname].any?
+      assert @trip.errors[:triptitle].any?
     end
   end
