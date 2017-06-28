@@ -1,5 +1,5 @@
 class Leg < ApplicationRecord
-  has_and_belongs_to_many :users
-  has_and_belongs_to_many :trips
+  belongs_to :users
+  belongs_to :trips
   validates :origin, :destination, presence: true
 end
