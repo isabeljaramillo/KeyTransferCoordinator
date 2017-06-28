@@ -5,3 +5,39 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+User.create(name: 'ArturTheHawk', uid: '', email: 'Artur@gmail.com', community: 'ChiEnl', voucher: 'DisasterPyrite', vouched: '1', leg_id: '1',)
+User.create(name: 'DisasterAimiya', uid: '', email: 'Aimiya@gmail.com', community: 'ChiEnl', voucher: 'DisasterPyrite', vouched: '1', leg_id: '2',)
+User.create(name: 'FireEmblemRoy', uid: '', email: 'FireEmblom@gmail.com', community: 'ChiEnl', voucher: 'DisasterScotch', vouched: '1', leg_id: '3',)
+User.create(name: 'Featherdog', uid: '', email: 'Featherdog@gmail.com', community: 'ChiEnl', voucher: 'FireEmblemRoy', vouched: '1', leg_id: '4',)
+User.create(name: 'DisasterTrident', uid: '', email: 'Trident@gmail.com', community: 'ChiEnl', voucher: 'DisasterPyrite', vouched: '1', leg_id: '5',)
+User.create(name: 'DisasterCthulhu', uid: '', email: 'Cthulhu@gmail.com', community: 'ChiEnl', voucher: 'DisasterPyrite', vouched: '1', leg_id: '6',)
+User.create(name: 'Wal10c', uid: '', email: 'Wal10c@gmail.com', community: 'ChiEnl', voucher: 'ArturTheHawk', vouched: '1', leg_id: '7',)
+User.create(name: 'Aonthe', uid: '', email: 'Aonthe@gmail.com', community: 'ChiEnl', voucher: 'ArturTheHawk', vouched: '1', leg_id: '8',)
+User.create(name: 'DisasterScotch', uid: '', email: 'Scotch@gmail.com', community: 'ChiEnl', voucher: 'DisasterCthulhu', vouched: '1', leg_id: '9',)
+User.create(name: 'StiffH20', uid: '', email: 'StiffH20@gmail.com', community: 'ChiEnl', voucher: 'ArturTheHawk', vouched: '1', leg_id: '10',)
+User.create(name: 'HawksParent', uid: '', email: 'Parent@gmail.com', community: 'ChiEnl', voucher: 'ArturTheHawk', vouched: '1', leg_id: '11',)
+User.create(name: 'Dayosteph', uid: '', email: 'Dayosteph@gmail.com', community: 'ChiEnl', voucher: 'DisasterScotch', vouched: '1', leg_id: '12',)
+User.create(name: 'DisasterPyrite', uid: '', email: 'Pyrite@gmail.com', community: 'ChiEnl', voucher: 'ArturTheHawk', vouched: '1', leg_id: '13',)
+
+Leg.create(origin: 'Chicago', destination: 'Charlotte', user_id: '1')
+Leg.create(origin: 'Los Angeles', destination: 'Mexico City', user_id: '2',)
+Leg.create(origin: 'Chicago', destination: 'Ann Arbor', user_id: '3',)
+Leg.create(origin: 'Denver', destination: 'Monterrey', user_id: '4',)
+Leg.create(origin: 'Ann Arbor', destination: 'Kansas City', user_id: '5',)
+Leg.create(origin: 'Chicago', destination: 'Monterrey', user_id: '6',)
+Leg.create(origin: 'Mexico City', destination: 'Tegucigalpa', user_id: '7',)
+Leg.create(origin: 'New York', destination: 'Chicago', user_id: '8',)
+Leg.create(origin: 'Chicago', destination: 'Dallas', user_id: '10',)
+Leg.create(origin: 'Ann Arbor', destination: 'Chicago', user_id: '11',)
+Leg.create(origin: 'Chicago', destination: 'Denver', user_id: '12',)
+Leg.create(origin: 'Kansas City', destination: 'Los Angeles', user_id: '13',)
+Leg.create(origin: 'Boston', destination: 'Chicago', user_id: '14')
+
+Trip.create(title: 'test 1', leg_id: '1',)
+Trip.create(title: 'test 2', leg_id: '4',)
+Trip.create(title: 'test 3', leg_id: '7',)
+Trip.create(title: 'test 4', leg_id: '2',)
+
