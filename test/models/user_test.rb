@@ -1,23 +1,21 @@
 require 'test_helper'
 
-class UserTest < ActiveSupport::TestCase
-  def new_user
-    User.new(name: "BartJolly",
-             uid: "123r34523",
-             email: "BartJolly@gmail.com",
-             community: "Chicago Area",
-             voucher: "Stanley89",
-             vouched: 0)
-  end
+  class UserTest < ActiveSupport::TestCase
+    def new_test
+      User.new(name:     "Bart Graves",
+               uid:       "345445609",
+               email:     "graves@gmail.com",
+               community: "Chicago Area",
+               voucher:   "My Friend Dave",
+               vouched:   true)
+    end
 
-  test "should not save user without username, email, community voucher or vouched"
-    @user = User.new
-    assert @user.invalid?
-    assert @user.errors[:name].any?
-    assert @user.errors[:email].any?
-    assert @user.errors[:uid].any?
-    assert @user.errors[:community].any?
-    assert @user.errors[:voucher].any?
-    assert @user.errors[:vouched].any?
+    test "should not save user without name, email uid, or community" do
+      @user = User.new
+      assert @user.invalid?
+      assert @user.errors[:name].any?
+      assert @user.errors[:email].any?
+      assert @user.errors[:uid].any?
+      assert @user.errors[:community].any?
+    end
   end
-end
