@@ -8,6 +8,7 @@ require 'test_helper'
     end
 
     test "should not save leg without destination or origin" do
+      @leg = Leg.new
       assert @leg.invalid?
       assert @leg.errors[:origin].any?
       assert @leg.errors[:destination].any?
