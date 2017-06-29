@@ -1,2 +1,5 @@
-<h1>Legs#new</h1>
-<p>Find me in app/views/legs/new.html.erb</p>
+<h1>New Leg</h1>
+
+<%= render 'form', leg: @leg %>
+
+<%= link_to 'Back', legs_path %>
