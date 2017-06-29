@@ -11,7 +11,6 @@ end
     auth_hash = request.env['omniauth.auth']
     @user = User.find_or_create_by(uid: auth_hash['uid']) do |user|
       user.email = auth_hash['info']['email']
-
   end
   self.current_user = @user
   redirect_to legs_url
