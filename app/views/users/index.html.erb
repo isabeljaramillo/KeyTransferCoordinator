@@ -14,3 +14,15 @@
   </thead>
 
 </table>
+
+<tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.community %></td>
+      <td><%= user.voucher %></td>
+      <td><%= user.vouched %></td>
+      </tr>
+  <% end %>
+</tbody>
