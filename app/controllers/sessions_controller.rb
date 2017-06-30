@@ -13,7 +13,7 @@ end
       user.email = auth_hash['info']['email']
   end
   self.current_user = @user
-  redirect_to legs_url
+  redirect_to users_url
 end
 
   def logout
