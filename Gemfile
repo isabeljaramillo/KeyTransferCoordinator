@@ -56,3 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Add own gemfiles
 #Use OmniAuth for Google
   gem 'omniauth-google-oauth2'
+
+#Use rails_controller_testing for, well, testing!
+  gem 'rails-controller-testing'
