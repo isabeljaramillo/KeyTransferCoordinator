@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trips</h1>
+<%= link_to 'List All Users', list_users %>
+<%= link_to 'List All Legs', list_path %>
+
+<%= form_with(model: @Trip, local: true) do |form| %>
+
+  <div class="field">
+
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<br>
