@@ -1,5 +1,5 @@
 class LegsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_trip, only: [:show, :edit, :update, :destroy]
   
   def index
     @legs = Leg.all
