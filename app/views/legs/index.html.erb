@@ -1,8 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Find Key Route</h1>
-<%= link_to 'New Leg', new_leg_path %>
-<%= link_to 'List All Legs', legs_index_path %>
+<%= link_to 'New Legs', legs_new %>
+<%= link_to 'Legs Index', legs_index %>
+<%= link_to 'New Trip', trips_new %>
+<%= link_to 'Trip Index', trips_index %>
+<%= link_to 'New Users', users_new %>
+<%= link_to 'Users Index', users_index %>
 
 <%= form_with(model: @Leg, local: true) do |form| %>
 
@@ -22,4 +26,3 @@
 <% end %>
 
 <br>
-
