@@ -4,8 +4,8 @@
       <h2><%= pluralize(leg.errors.count, "error") %> prohibited this error from being saved:</h2>
 
       <ul>
-      <%leg.errors.full_messages.each do |message| %>
-      <li><%= message %>
+        <%leg.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
         <% end %>
       </ul>
     </div>
