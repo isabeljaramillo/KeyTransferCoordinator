@@ -1,16 +1,15 @@
 <%= form_with(model: leg, local: true) do |form| %>
-  <% if user.errors.any? %>
+  <% if leg.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this error from being saved:</h2>
+      <h2><%= pluralize(leg.errors.count, "error") %> prohibited this error from being saved:</h2>
 
       <ul>
-      <%user.errors.full_messages.each do |message| %>
+      <%leg.errors.full_messages.each do |message| %>
       <li><%= message %>
         <% end %>
       </ul>
     </div>
   <% end %>
-
     <div class = "field">
     <%= form.label :origin %>
     <%= form.text_field :origin, id: origin %>
