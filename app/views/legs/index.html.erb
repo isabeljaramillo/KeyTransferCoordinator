@@ -8,21 +8,29 @@
 <%= link_to 'New Users', users_new_path %>
 <%= link_to 'Users Index', users_index_path %>
 
-<%= form_with(model: @Leg, local: true) do |form| %>
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>User ID</th>
+      <th>Trip ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-  <div class="field">
-    <%= form.label :origin %>
-    <%= form.text_field :origin, id: :trip_origin %>
-  </div>
+</table>
 
-  <div class="field">
-    <%= form.label :destination %>
-    <%= form.text_field :destination, id: :trip_destination %>
-  </div>
+<tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= trip.origin %></td>
+      <td><%= trip.destination %></td>
+      <td><%= trip.user_id %></td>
+      <td><%= trip.trip_id %></td>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+      </tr>
+  <% end %>
+</tbody>
 
 <br>
