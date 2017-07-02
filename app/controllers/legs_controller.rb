@@ -1,6 +1,6 @@
 class LegsController < ApplicationController
-  before_action :set_leg, only: [:show, :edit, :update, :destroy]
-  
+  before_action :set_leg, only: [:show, :edit, :update, :destroy]  
+ 
   def index
     @legs = Leg.all
   end
@@ -61,6 +61,6 @@ class LegsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def leg_params
-      params.require(:leg).permit(:name, :email)
+      params.require(:leg).permit(:origin, :destination)
     end
 end
