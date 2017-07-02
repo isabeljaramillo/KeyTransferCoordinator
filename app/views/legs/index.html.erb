@@ -18,16 +18,15 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-</table>
 
 <tbody>
-  <% @legs.each do |user| %>
+  <% @legs.each do |leg| %>
     <tr>
       <td><%= leg.origin %></td>
       <td><%= leg.destination %></td>
       <td><%= leg.user_id %></td>
       <td><%= leg.trip_id %></td>
-      </tr>
-
+    </tr>
   <% end %>
 </tbody>
+</table>
