@@ -16,13 +16,11 @@ class LegsController < ApplicationController
   end
   
   def create
-    @leg = Leg.new(trip_params)
-    @leg.uid = current_trip
-    @leg.email = current_trip
+    @leg = Leg.new(leg_params)
 
     respond_to do |format|
       if @leg.save
-        format.html { redirect_to @leg, notice: 'trip info was successfully created.' }
+        format.html { redirect_to @leg, notice: 'leg info was successfully created.' }
         format.json { render :show, status: :created, location: @leg }
       else
         format.html { render :new }
@@ -31,11 +29,11 @@ class LegsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /trips/1
-  # PATCH/PUT /trips/1.json
+  # PATCH/PUT /legs/1
+  # PATCH/PUT /legs/1.json
   def update
     respond_to do |format|
-      if @leg.update(trip_params)
+      if @leg.update(leg_params)
         format.html { redirect_to @leg, notice: 'leg was successfully updated.' }
         format.json { render :show, status: :ok, location: @leg }
       else
@@ -45,12 +43,12 @@ class LegsController < ApplicationController
     end
   end
 
-  # DELETE /trips/1
-  # DELETE /trips/1.json
+  # DELETE /legs/1
+  # DELETE /legs/1.json
   def destroy
     @leg.destroy
     respond_to do |format|
-      format.html { redirect_to trips_url, notice: 'leg info was successfully destroyed.' }
+      format.html { redirect_to legs_url, notice: 'leg info was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -62,7 +60,7 @@ class LegsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def trip_params
+    def leg_params
       params.require(:leg).permit(:name, :email)
     end
 end
