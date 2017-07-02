@@ -1,5 +1,5 @@
 class LegsController < ApplicationController
-  before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  before_action :set_leg, only: [:show, :edit, :update, :destroy]
   
   def index
     @legs = Leg.all
@@ -36,7 +36,7 @@ class LegsController < ApplicationController
   def update
     respond_to do |format|
       if @leg.update(trip_params)
-        format.html { redirect_to @leg, notice: 'trip was successfully updated.' }
+        format.html { redirect_to @leg, notice: 'leg was successfully updated.' }
         format.json { render :show, status: :ok, location: @leg }
       else
         format.html { render :edit }
@@ -50,19 +50,19 @@ class LegsController < ApplicationController
   def destroy
     @leg.destroy
     respond_to do |format|
-      format.html { redirect_to trips_url, notice: 'trip info was successfully destroyed.' }
+      format.html { redirect_to trips_url, notice: 'leg info was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_trip
-      @leg = trip.find(params[:id])
+    def set_leg
+      @leg = Leg.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trip_params
-      params.require(:trip).permit(:name, :email)
+      params.require(:leg).permit(:name, :email)
     end
 end
