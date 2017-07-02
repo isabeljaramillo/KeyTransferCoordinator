@@ -1,8 +1,28 @@
 <% provide(:title, 'Users') %>
 <h1>Users</h1>
-<ul class ='users'>
-    <% @users.each do |user| %>
-      <li>
-        <%= link_to user.name, user %>
-  </li>
-<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Community</th>
+      <th>Voucher</th>
+      <th>Vouched</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+</table>
+
+<tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.community %></td>
+      <td><%= user.voucher %></td>
+      <td><%= user.vouched %></td>
+      </tr>
+  <% end %>
+</tbody>
