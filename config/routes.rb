@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'legs#index'
+  root 'users#index'
 
   get 'sessions/new'
   match 'auth/:provider/callback', to: 'sessions#create', via: [:post, :get]
