@@ -51,6 +51,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# Use postgres gem in production on heroku
 group :production do
   gem 'pg'
 end
