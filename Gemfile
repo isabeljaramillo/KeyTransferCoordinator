@@ -65,3 +65,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Use rails_controller_testing for, well, testing!
   gem 'rails-controller-testing'
+
+  # Specify Ruby version for heroku
+  ruby '2.4.1'
